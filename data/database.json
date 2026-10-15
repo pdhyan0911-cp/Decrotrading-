@@ -1,0 +1,292 @@
+{
+  "users": [
+    {
+      "id": "user-admin",
+      "name": "DecroTrade Chief Admin",
+      "email": "admin@decrotrade.com",
+      "passwordHash": "f58cffea9af8fc8be92807565d79556adb7cd304b9e077284918f5a6f53b732a63f258c3e3efa229ba312206b0ac890758899413e075ad48fdd613a0eb63bca6",
+      "salt": "f0f56dd933da1d8777a2c6087bb3e58b",
+      "role": "admin",
+      "createdAt": "2026-01-10T10:00:00.000Z",
+      "tradingStyle": "Position Trader",
+      "bio": "Lead market structure researcher and educational curriculum director at DecroTrade.",
+      "virtualBalance": 100000,
+      "xp": 7500,
+      "level": 8,
+      "streakDays": 14,
+      "lastActiveDate": "2026-10-14T15:58:57.371Z",
+      "completedLessons": [
+        "les-1-1-1",
+        "les-1-1-2",
+        "les-2-1-1",
+        "les-2-1-2",
+        "les-7-1-1"
+      ],
+      "completedCourses": [
+        "course-1",
+        "course-2"
+      ],
+      "quizAttempts": [
+        {
+          "quizId": "q-1-1-1",
+          "score": 2,
+          "total": 2,
+          "timestamp": "2026-10-12T14:20:00.000Z"
+        },
+        {
+          "quizId": "q-2-1-1",
+          "score": 2,
+          "total": 2,
+          "timestamp": "2026-10-13T09:15:00.000Z"
+        }
+      ],
+      "earnedBadges": [
+        "badge-first-step",
+        "badge-quiz-ace",
+        "badge-risk-architect",
+        "badge-course-grad"
+      ],
+      "dailyGoalXP": 100,
+      "todayXP": 75
+    },
+    {
+      "id": "user-trader",
+      "name": "Alex Vance",
+      "email": "trader@decrotrade.com",
+      "passwordHash": "59a379430f5dc8b30f2eb42bf420a5aa890fe82981a23ed878803085042cc230a3208e4f243aa8dd277efd9b76785706ae807f1abe06380b7308293de0eb6f19",
+      "salt": "470fd1b38408d773a4d69430f66000a0",
+      "role": "user",
+      "createdAt": "2026-02-01T12:00:00.000Z",
+      "tradingStyle": "Swing Trader",
+      "bio": "Disciplined student focusing on multi-timeframe price action and strict 1% account risk.",
+      "virtualBalance": 102450.5,
+      "xp": 1850,
+      "level": 3,
+      "streakDays": 4,
+      "lastActiveDate": "2026-10-14T15:58:57.438Z",
+      "completedLessons": [
+        "les-1-1-1",
+        "les-1-1-2",
+        "les-2-1-1"
+      ],
+      "completedCourses": [
+        "course-1"
+      ],
+      "quizAttempts": [
+        {
+          "quizId": "q-1-1-1",
+          "score": 2,
+          "total": 2,
+          "timestamp": "2026-10-13T10:00:00.000Z"
+        }
+      ],
+      "earnedBadges": [
+        "badge-first-step",
+        "badge-paper-pioneer"
+      ],
+      "dailyGoalXP": 100,
+      "todayXP": 50
+    }
+  ],
+  "sessions": [
+    {
+      "token": "43bf6c2f9b3ef6e4d0de565ab55d612b1c0a2a1425cd4c720b500d50e0edadb1",
+      "userId": "user-admin",
+      "expiresAt": 1792598358683
+    }
+  ],
+  "positions": [
+    {
+      "id": "pos-1",
+      "userId": "user-trader",
+      "symbol": "AAPL",
+      "side": "long",
+      "quantity": 50,
+      "entryPrice": 224.5,
+      "currentPrice": 228.25,
+      "stopLoss": 221,
+      "takeProfit": 235,
+      "unrealizedPnl": 187.5,
+      "unrealizedPnlPercent": 1.67,
+      "openTimestamp": "2026-10-14T11:58:57.438Z",
+      "leverage": 1,
+      "investedAmount": 11225
+    }
+  ],
+  "closedTrades": [
+    {
+      "id": "trade-closed-1",
+      "userId": "user-trader",
+      "symbol": "NVDA",
+      "side": "long",
+      "quantity": 100,
+      "entryPrice": 120.5,
+      "exitPrice": 125,
+      "stopLoss": 118,
+      "takeProfit": 125,
+      "realizedPnl": 450,
+      "realizedPnlPercent": 3.73,
+      "openTimestamp": "2026-10-12T15:58:57.438Z",
+      "closeTimestamp": "2026-10-13T19:58:57.438Z",
+      "closeReason": "take_profit",
+      "riskRewardRatio": 1.8
+    },
+    {
+      "id": "trade-closed-2",
+      "userId": "user-trader",
+      "symbol": "BTC/USD",
+      "side": "long",
+      "quantity": 0.25,
+      "entryPrice": 63500,
+      "exitPrice": 62800,
+      "stopLoss": 62800,
+      "takeProfit": 66000,
+      "realizedPnl": -175,
+      "realizedPnlPercent": -1.1,
+      "openTimestamp": "2026-10-11T15:58:57.438Z",
+      "closeTimestamp": "2026-10-12T13:58:57.438Z",
+      "closeReason": "stop_loss",
+      "riskRewardRatio": 0
+    }
+  ],
+  "journalEntries": [
+    {
+      "id": "jour-1",
+      "userId": "user-trader",
+      "tradeId": "trade-closed-1",
+      "symbol": "NVDA",
+      "side": "long",
+      "entryDate": "2026-10-12T15:58:57.438Z",
+      "pnl": 450,
+      "strategyUsed": "Breakout Retest on 1H Chart",
+      "emotionalState": "Disciplined",
+      "followedPlan": true,
+      "mistakeTags": [],
+      "notes": "Waited for hourly close above $120.00 resistance with volume confirmation. Placed technical stop below recent swing low ($118.00). Target hit cleanly as buyers stepped in.",
+      "createdAt": "2026-10-13T20:58:57.438Z"
+    },
+    {
+      "id": "jour-2",
+      "userId": "user-trader",
+      "tradeId": "trade-closed-2",
+      "symbol": "BTC/USD",
+      "side": "long",
+      "entryDate": "2026-10-11T15:58:57.438Z",
+      "pnl": -175,
+      "strategyUsed": "Support Bounce",
+      "emotionalState": "Hesitant / Anxious",
+      "followedPlan": true,
+      "mistakeTags": [
+        "Minor early entry before confirmation"
+      ],
+      "notes": "Setup failed when higher-timeframe selling expanded. Happy I respected my stop loss and exited at $62,800 without hesitation. Kept loss capped at 0.17% of total capital.",
+      "createdAt": "2026-10-12T14:58:57.438Z"
+    }
+  ],
+  "communityPosts": [
+    {
+      "id": "post-1",
+      "userId": "user-admin",
+      "authorName": "DecroTrade Chief Admin",
+      "authorRole": "admin",
+      "title": "The Golden Rule of Position Sizing: Why 1% Risk Saves Accounts",
+      "content": "Many beginner traders wonder why they blow up their demo accounts in a single bad afternoon. The reason is almost always oversized risk. If you risk 10% per trade, five consecutive losses cuts your capital by over 40%. When you limit risk to 1%, a 5-loss streak is a mere 4.9% dent, leaving your psychology intact. Calculate your stop-loss distance FIRST, then determine share size!",
+      "category": "Risk Management",
+      "symbolTag": "AAPL",
+      "likes": 18,
+      "likedBy": [
+        "user-trader"
+      ],
+      "commentCount": 2,
+      "comments": [
+        {
+          "id": "comm-1",
+          "userId": "user-trader",
+          "userName": "Alex Vance",
+          "content": "This formula changed everything for me. Calculating shares based on the stop distance took away 90% of my trading anxiety.",
+          "timestamp": "2026-10-14T10:58:57.438Z"
+        }
+      ],
+      "createdAt": "2026-10-13T15:58:57.438Z"
+    },
+    {
+      "id": "post-2",
+      "userId": "user-trader",
+      "authorName": "Alex Vance",
+      "authorRole": "user",
+      "title": "Spotting Bearish Divergence on the 4H Timeframe",
+      "content": "Spent the weekend studying Course 6 (Indicators and Trend Analysis). Notice how when price makes a higher high, but the 14 RSI makes a lower high, it acts like an early warning radar that buyers are losing steam. Tested this on paper trades and it prevented me from buying at tops!",
+      "category": "Strategy Analysis",
+      "symbolTag": "BTC/USD",
+      "likes": 9,
+      "likedBy": [],
+      "commentCount": 0,
+      "comments": [],
+      "createdAt": "2026-10-14T03:58:57.438Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "user-trader",
+      "title": "Welcome to DecroTrade",
+      "message": "Your virtual account has been credited with $100,000 virtual funds for educational practice.",
+      "type": "system",
+      "isRead": false,
+      "timestamp": "2026-10-13T15:58:57.438Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "user-trader",
+      "title": "Certificate Issued!",
+      "message": "Congratulations on completing Course 1: Market Fundamentals!",
+      "type": "course",
+      "isRead": true,
+      "timestamp": "2026-10-13T21:58:57.438Z"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-1",
+      "userId": "user-trader",
+      "userName": "Alex Vance",
+      "courseId": "course-1",
+      "courseTitle": "Market Fundamentals",
+      "issueDate": "2026-10-13",
+      "verificationCode": "DT-MF-84920",
+      "scorePercent": 100
+    }
+  ],
+  "challengeLeaderboards": [
+    {
+      "challengeId": "ch-1",
+      "userId": "user-admin",
+      "userName": "DecroTrade Chief Admin",
+      "score": 5,
+      "total": 5,
+      "accuracyPercent": 100,
+      "timeSpentSeconds": 42,
+      "timestamp": "2026-10-14T07:58:57.438Z"
+    },
+    {
+      "challengeId": "ch-1",
+      "userId": "user-trader",
+      "userName": "Alex Vance",
+      "score": 4,
+      "total": 5,
+      "accuracyPercent": 80,
+      "timeSpentSeconds": 58,
+      "timestamp": "2026-10-14T12:58:57.438Z"
+    },
+    {
+      "challengeId": "ch-4",
+      "userId": "user-trader",
+      "userName": "Alex Vance",
+      "score": 5,
+      "total": 5,
+      "accuracyPercent": 100,
+      "timeSpentSeconds": 74,
+      "timestamp": "2026-10-14T09:58:57.438Z"
+    }
+  ]
+}

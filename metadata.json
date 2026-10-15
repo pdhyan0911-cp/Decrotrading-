@@ -1,0 +1,6 @@
+{
+  "name": "DecroTrade",
+  "description": "Professional trading education, interactive market analysis, virtual practice simulator, and gamified learning platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
